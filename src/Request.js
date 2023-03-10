@@ -89,7 +89,6 @@ function Request() {
 
   const handleDecline = async (formID) => {
     try {
-         console.log("I am handleDecline");
       const formRef = doc(db, "donorform", formID);
       await deleteDoc(formRef);
       console.log("Form declined: ", formID);
@@ -130,8 +129,8 @@ function Request() {
               <label className='request-data'>{form.BestBefore}</label>
             </div>
             <div className='btn-group'>
-              <button className='btn btn-accept' onClick={() => handleAccept(form.id)}>Accept</button>
-              <button className='btn btn-reject' onClick={() => handleDecline(form.id)}>Decline</button>
+              <button className='btn btn-accept' onClick={() => {handleAccept(form.id);}}>Accept</button>
+              <button className='btn btn-reject' onClick={() => {handleDecline(form.id);}}>Decline</button>
             </div>
           </form>
         </div>

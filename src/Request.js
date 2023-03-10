@@ -82,6 +82,7 @@ function Request() {
       await deleteDoc(formRef);
       console.log("Form accepted: ", formID);
     } catch (e) {
+        console.log("This is error");
       console.error(e);
     }
   }

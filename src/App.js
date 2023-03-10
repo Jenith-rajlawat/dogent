@@ -1,7 +1,10 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from './Navigation';
 import Heading from './Heading';
 import Request from './Request';
+import Account from './Account';
+import AboutUs from './AboutUs';
 // import Sidebar from "./Components/Sidebar"
 // import Navbar from "./Components/Navbar"
 function App() {
@@ -13,7 +16,13 @@ function App() {
         <Heading />
 
             <div className='body-wrapper'>
-          <Request />
+           <Router>
+          <Routes>
+           <Route path="/" element={<Request />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Account" element={<Account />} />
+          </Routes>
+          </Router>
             </div>
         </div>
       </div>

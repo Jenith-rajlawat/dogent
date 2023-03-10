@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 60px;
+}
+
+.userProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    column-gap: 10px;
+}
+
+.navbar__profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('https: //cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png');
+    background-color: black;
+}
+
+.navbar__profile-name {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar__logo {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+    align-items: left;
+    justify-content: center;
+
+}
+
+.navbar__logoin {
+    color: Black;
+    font-size: 1.5rem;
+}
+
+.navbar__logo-icon {
+    font-size: 1.2rem;
+}
